@@ -1,1 +1,71 @@
-theme: jekyll-theme-slate
+# Welcome to Jekyll!
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Alexey Ivanov
+description: >- # this means to ignore newlines until "baseurl:"
+  A blog about Java client technologies by
+  a Java sustaining engineer.
+  The views expressed on this blog are solely my own.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+author:
+  name: Alexey Ivanov
+#  email: "aivanov@openjdk.org"
+
+
+# Build settings
+#theme: minima
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+
+minima:
+  skin: auto
+
+  social_links:
+    - title: Alexey Ivanov at GitHub
+      icon: github
+      url: "https://github.com/aivanov-jdk"
+    - title: Alexey Ivanov at LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/aivanov-jdk/"
+    - title: Alexey Ivanov at Bluesky
+      icon: bluesky
+      url: "https://bsky.app/profile/aivanov.bsky.social"
+    - title: Alexey Ivanov at X (formerly Twitter)
+      icon: x-twitter
+      url: "https://x.com/aivanovjdk"
+
+  hide_site_feed_link: true
+
+  show_excerpts: true
+
+google_analytics: G-QQ1RTDP71M
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .idea
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
